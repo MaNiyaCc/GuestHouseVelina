@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest House Velina</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section class="banner">
+            <h1>Guest House Velina</h1>
+        </section>
+
+        <section class="description">
+            <div>
+
+                <h2>House Description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis necessitatibus non fuga ut assumenda minima delectus! Error, impedit voluptates earum vitae dolore sapiente, dolores velit corporis dignissimos facere nam?</p>
+            </div>
+            <img src="./images/house velina.jpg" alt="Velina House" />
+        </section>
+
+        <section class="rooms">
+            <div class="room" onclick="onRoomClick('room1')">
+                Room 1
+            </div>
+            <div class="room" onclick="onRoomClick('kitchen')">
+                Kitchen
+            </div>
+            <div class="room">
+                Room 2
+            </div>
+
+            <div class="room">
+                Room 3
+            </div>
+        </section>
+
+        <section class="booking-calendar">
+            <h3>June</h3>
+            <section class="days">
+                <div class="day">1</div>
+                <div class="day active-day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day active-day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+                <div class="day">1</div>
+            </section>
+        </section>
+    </main>
+
+    <section class="room-modal">
+        <img id="close-modal" src="./images/close.png" alt="close" onclick="hideRoomModal()" />
+        <img id="room-preview" src="" alt="room" />
+    </section>
+
+    <section id="booking-modal">
+        <img id="close-booking-modal" src="./images/close.png" alt="close" onclick="hideBookingModal()" />
+
+        <div class="booking-form">
+            <h3>Please write your details</h3>
+            <form class="booking-form-element">
+                <div class="input-field">
+                    <label for="firstName">First name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">First name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">First name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">First name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>
